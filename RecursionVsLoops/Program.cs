@@ -21,7 +21,10 @@ namespace RecursionVsLoops
                 previous = new Node($"Node {i}", previous);
             }
 
-            var resultOfRecursion = TraverseTreeUsingRecursion(previous);
+            var resultOfRecursion1 = TraverseTreeUsingRecursion1(previous);
+
+            var resultOfRecursion2 = new List<string>();
+            TraverseTreeUsingRecursion2(previous, ref resultOfRecursion2);
 
             var resultOfLooping = TraverseTreeUsingLoops(previous);
 
@@ -32,16 +35,33 @@ namespace RecursionVsLoops
             Console.ReadLine();
         }
 
-        public static List<string> TraverseTreeUsingRecursion(Node root)
+        public static List<string> TraverseTreeUsingRecursion1(Node root)
         {
             var result = new List<string> { root.Name };
 
             if (root.Next != null)
             {
-                result.AddRange(TraverseTreeUsingRecursion(root.Next));
+                result.AddRange(TraverseTreeUsingRecursion1(root.Next));
             }
 
             return result;
+        }
+
+        public static void TraverseTreeUsingRecursion2(Node root, ref List<string> lst)
+        {
+            if (lst == null)
+            {
+                lst = new List<string> { root.Name };
+            }
+            else
+            {
+                lst.Add(root.Name);
+            }
+
+            if (root.Next != null)
+            {
+                TraverseTreeUsingRecursion2(root.Next, ref lst);
+            }
         }
 
         public static List<string> TraverseTreeUsingLoops(Node root)
