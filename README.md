@@ -1,10 +1,10 @@
-<link rel="canonical" href="https://levelup.gitconnected.com/curse-of-recursion-in-net-c-b017271ddbe6?sk=e1a1f74d42d80a82d433d5be37bc15ac" />
+<link rel="canonical" href="https://www.developmentsimplyput.com/post/curse-of-recursion-in-net-c" />
 
 # Curse of Recursion in .NET C#
 ### Why and How you should always try to replace Recursion with something else in .NET C#
 
 <p align="center">
-  <img src="https://miro.medium.com/max/1400/1*0O7VNtg__LIHgU8QjcR-Rg.jpeg">
+  <img src="https://static.wixstatic.com/media/488a99_8acc4b20a72a4ec986fec8a930fe97a0~mv2.png/v1/fill/w_828,h_552,al_c,q_90,enc_auto/488a99_8acc4b20a72a4ec986fec8a930fe97a0~mv2.png">
 </p>
 
 <br/>
@@ -57,4 +57,4 @@ If you are interested into reading more about this topic, you can read [the rest
 [LinkedIn]: https://www.linkedin.com/in/atarekhasan/
 [Friend Links]: https://www.linkedin.com/feed/update/urn:li:activity:6866082670108143616/
 [Newsletter]: https://www.linkedin.com/newsletters/development-simply-put-6866647119655247872/
-[Article]: https://levelup.gitconnected.com/curse-of-recursion-in-net-c-b017271ddbe6?sk=e1a1f74d42d80a82d433d5be37bc15ac
+[Article]: https://www.developmentsimplyput.com/post/curse-of-recursion-in-net-c
